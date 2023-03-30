@@ -75,3 +75,30 @@ This microservice will provide some features for roadtrip's cartography.
     -  Roadtrip search more than 25 KM radius
     -  Share a roadtrip
     -  ...
+
+
+60_000€ / employee / year
+
+- NME -> CEO, archi, backend, frontend
+- VTR -> CTO, devops, 
+- LLA -> back dev
+- RMO -> human resources
+- ... -> accounting
+
+Human needs:
+- 1 Chief Executive Officer
+- 1 Chief Technology Officer
+- 1 Human Resources Manager
+- 1 accountant
+- 1 commercial (social network)
+- 1 scrum master (Agility)
+- 1 devops (Azure, Kub8, Docker, Ansible, Terraform, OWASP)
+- 1 product architect (Clean archi / DDD)
+- 1 backend developer (Java/Python)
+- 1 frontend developer (ReactJS)
+
+10 employees
+
+- 600_000€ wages
+- 20_000€ laptops
+
