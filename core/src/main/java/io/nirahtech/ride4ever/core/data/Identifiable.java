@@ -1,5 +1,7 @@
 package io.nirahtech.ride4ever.core.data;
 
-public interface Identifiable<T> {
+import java.io.Serializable;
+
+public interface Identifiable<T> extends Serializable {
     T getIdentifier();
 }

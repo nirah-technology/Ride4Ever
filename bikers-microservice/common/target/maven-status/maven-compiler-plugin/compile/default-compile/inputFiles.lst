@@ -1,0 +1,11 @@
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/MotorcyclesQueryReadOnlyApi.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/data/RealBiker.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/MotorcycleClubsCommandWriteApi.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/data/RealMotorcycle.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/BikersCommandWriteApi.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/BikersQueryReadOnlyApi.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/data/RealClubMember.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/data/RealMotorcycleClub.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/data/RealGarage.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/MotorcycleClubsQueryReadOnlyApi.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/common/src/main/java/io/nirahtech/ride4ever/bikers/common/api/MotorcyclesCommandWriteApi.java

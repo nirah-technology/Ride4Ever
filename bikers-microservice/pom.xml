@@ -51,6 +51,7 @@
         <artifactId>core</artifactId>
         <version>${ride4ever.core.version}</version>
       </dependency>
+      
     </dependencies>
   </dependencyManagement>
 

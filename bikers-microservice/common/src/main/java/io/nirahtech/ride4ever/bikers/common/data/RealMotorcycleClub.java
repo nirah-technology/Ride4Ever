@@ -7,12 +7,23 @@ import java.util.stream.Stream;
 import io.nirahtech.ride4ever.core.data.ClubMember;
 import io.nirahtech.ride4ever.core.data.MotorcycleClub;
 import io.nirahtech.ride4ever.core.data.MotorcycleClubIdentifier;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
+@Entity
 public final class RealMotorcycleClub implements MotorcycleClub {
 
+    @Id
     private MotorcycleClubIdentifier identifier;
     private String name;
+
+    @Temporal(TemporalType.DATE)
     private LocalDate creationDate;
+
+    @OneToMany
     private Set<ClubMember> clubMembers;
 
     @Override

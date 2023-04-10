@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 /**
  * Biker
  */
-public interface Biker extends Serializable {
+public interface Biker extends Serializable, Comparable<Biker> {
     BikerIdentifier getIdentifier();
 
     String getFirstName();
@@ -23,6 +23,9 @@ public interface Biker extends Serializable {
     String getPhoneNumber();
 
     boolean isPremiumMember();
+    
+    boolean isMedicalTraining();
+    boolean isTrainedInMechanics();
 
-    Stream<Motorcycle> getMotorcycles();
+    Garage getGarage();
 }

@@ -1,0 +1,16 @@
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/providers/BikersServiceProvider.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/motorcycles/MotorcyclesCatalog.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/motorcycles/MotorcyclesService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/bikers/BikersCatalog.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/Catalog.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/motorcycles/RestRemoteMotorcyclesService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/motorcycles/MotorcyclesCatalogImpl.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/clubs/RestRemoteMotorcycleClubsService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/bikers/BikersCatalogImpl.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/providers/BikersServiceProviderFactory.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/bikers/RestRemoteBikersService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/clubs/MotorcycleClubsCatalog.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/bikers/BikersService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/business/services/clubs/MotorcycleClubsService.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/providers/BikersServiceProviderImpl.java
+/home/nicolas/Documents/Nirah-Technology/ride4ever/bikers-microservice/client/src/main/java/io/nirahtech/ride4ever/bikers/client/interfaces/catalogs/clubs/MotorcycleClubsCatalogImpl.java

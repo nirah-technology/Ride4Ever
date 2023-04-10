@@ -5,19 +5,27 @@ import java.time.LocalDate;
 import io.nirahtech.ride4ever.core.data.Motorcycle;
 import io.nirahtech.ride4ever.core.data.MotorcycleIdentifier;
 import io.nirahtech.ride4ever.core.data.MotorcycleType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
-/**
- * Biker
- */
+@Entity
 public final class RealMotorcycle implements Motorcycle {
 
+    @Id
     private MotorcycleIdentifier identifier;
     private String brand;
     private String model;
     private int engineDisplacement;
 
+    @Enumerated(EnumType.STRING)
     private MotorcycleType motorcycleType;
     private String licensePlate;
+
+    @Temporal(TemporalType.DATE)
     private LocalDate firstCirculationDate;
 
     @Override

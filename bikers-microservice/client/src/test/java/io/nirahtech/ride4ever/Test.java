@@ -1,7 +1,7 @@
 package io.nirahtech.ride4ever;
 
-import io.nirahtech.ride4ever.bikers.clients.interfaces.providers.BikersServiceProvider;
-import io.nirahtech.ride4ever.bikers.clients.interfaces.providers.BikersServiceProviderFactory;
+import io.nirahtech.ride4ever.bikers.client.interfaces.providers.BikersServiceProvider;
+import io.nirahtech.ride4ever.bikers.client.interfaces.providers.BikersServiceProviderFactory;
 
 public class Test {
     

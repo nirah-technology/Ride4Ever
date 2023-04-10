@@ -1,0 +1,11 @@
+io/nirahtech/ride4ever/bikers/common/data/RealGarage.class
+io/nirahtech/ride4ever/bikers/common/api/MotorcycleClubsQueryReadOnlyApi.class
+io/nirahtech/ride4ever/bikers/common/api/MotorcyclesQueryReadOnlyApi.class
+io/nirahtech/ride4ever/bikers/common/api/BikersQueryReadOnlyApi.class
+io/nirahtech/ride4ever/bikers/common/data/RealMotorcycleClub.class
+io/nirahtech/ride4ever/bikers/common/api/MotorcycleClubsCommandWriteApi.class
+io/nirahtech/ride4ever/bikers/common/api/MotorcyclesCommandWriteApi.class
+io/nirahtech/ride4ever/bikers/common/data/RealClubMember.class
+io/nirahtech/ride4ever/bikers/common/data/RealMotorcycle.class
+io/nirahtech/ride4ever/bikers/common/data/RealBiker.class
+io/nirahtech/ride4ever/bikers/common/api/BikersCommandWriteApi.class

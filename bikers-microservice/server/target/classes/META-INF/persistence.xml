@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+    xmlns="https://jakarta.ee/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="3.0"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+        <description>Persistence Unit for the bikers microservice.</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>io.nirahtech.ride4ever.bikers.common.data.RealBiker</class>
+        <class>io.nirahtech.ride4ever.bikers.common.data.RealGarage</class>
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/r4e-bikers" />
+            <property name="jakarta.persistence.jdbc.user" value="r4e" />
+            <property name="jakarta.persistence.jdbc.password" value="R1de 4 3ver with bikers!" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="update" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+            <property name="packagesToScan" value="io.nirahtech.ride4ever.bikers.common.data" />
+            <property name="hibernate.show_sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>
