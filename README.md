@@ -102,3 +102,4 @@ Human needs:
 - 600_000€ wages
 - 20_000€ laptops
 
+https://www.planitpoker.com/board/#/room/93b90d34e5174be9b49f48125850e252
