@@ -1,9 +1,9 @@
 package io.nirahtech.ride4ever.registry.common;
 
-import java.net.URL;
 import java.util.Optional;
+import java.util.Set;
 
-@FunctionalInterface
 public interface ServiceRegistryExplorer {
-    Optional<URL> lookup(final Service service);
+    Optional<MicroServiceCluster> lookup(final String microServiceName);
+    Set<MicroServiceCluster> discoverAll();
 }

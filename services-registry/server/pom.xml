@@ -14,5 +14,52 @@
   <name>ride4ever-services-registry-server</name>
   <url>http://www.example.com</url>
 
+  
+  <properties>
+    <ride4ever.bikers.common.version>1.0-SNAPSHOT</ride4ever.bikers.common.version>
+    <ride4ever.registry.client.version>1.0-SNAPSHOT</ride4ever.registry.client.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.nirahtech.ride4ever</groupId>
+      <artifactId>bikers-microservice-common</artifactId>
+      <version>${ride4ever.bikers.common.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.nirahtech.ride4ever</groupId>
+      <artifactId>services-registry-client</artifactId>
+      <version>${ride4ever.registry.client.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.javalin/javalin -->
+    <dependency>
+        <groupId>io.javalin</groupId>
+        <artifactId>javalin</artifactId>
+        <version>5.4.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>2.0.6</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230227</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.14.2</version>
+    </dependency>
+
+  </dependencies>
+
 
 </project>
