@@ -1,0 +1,181 @@
+version: '3.3'
+services:
+  # database:
+  #   image: mariadb
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: Ride4Ever
+  #   networks:
+  #     - network_database
+  #   ports:
+  #     - 3306:3306
+  ride4ever-service-configuration:
+    build: ./ride4ever-service-configuration
+    restart: always
+    hostname: ride4ever-service-configuration
+    networks:
+      - network_discovery
+      - network_configuration
+    ports:
+      - 9101:9101
+  ride4ever-service-discovery:
+    build: ./ride4ever-service-discovery
+    restart: always
+    hostname: ride4ever-service-discovery
+    depends_on:
+      - ride4ever-service-configuration
+    networks:
+      - network_discovery
+      - network_configuration
+    ports:
+      - 8761:8761
+  ride4ever-service-apigateway:
+    depends_on:
+      - ride4ever-service-discovery
+    build: ./ride4ever-service-apigateway
+    restart: always
+    hostname: apigateway
+    networks:
+      - network_discovery
+      - network_configuration
+    ports:
+      - 9600:9600
+  ride4ever-microservice-account:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-account
+    restart: always
+    hostname: account
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-biker:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-biker
+    restart: always
+    hostname: biker
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  # ride4ever-microservice-broker:
+  #   depends_on:
+  #     - ride4ever-service-apigateway
+  #   build: ./ride4ever-microservice-broker
+  #   restart: always
+  #   hostname: broker
+  #   networks:
+  #     - network_discovery
+  #     - network_configuration
+  #     - network_message_broker
+    #   - network_database
+  ride4ever-microservice-garage:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-garage
+    restart: always
+    hostname: garage
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-geomap:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-geomap
+    restart: always
+    hostname: geomap
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-club:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-motorcycleclub
+    restart: always
+    hostname: club
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-recovery:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-recovery
+    restart: always
+    hostname: recovery
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-reservation:
+    depends_on:
+      - ride4ever-service-apigateway
+    build: ./ride4ever-microservice-reservation
+    restart: always
+    hostname: reservation
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-trip:
+    depends_on:
+      # - database
+      # - ride4ever-service-configuration
+      - ride4ever-service-discovery
+    build: ./ride4ever-microservice-trip
+    restart: always
+    hostname: trip
+    networks:
+      - network_discovery
+      - network_configuration
+      - network_message_broker
+    #   - network_database
+  ride4ever-microservice-prometheus:
+    image: prom/prometheus
+    restart: always
+    ports:
+      - 9090:9090
+    networks:
+      - network_discovery
+    volumes:
+      - './ride4ever-prometheus/prometheus.yml:/etc/prometheus/prometheus.yml'
+  ride4ever-microservice-grafana:
+    image: grafana/grafana
+    restart: always
+    networks:
+      - network_discovery
+    ports:
+      - 3000:3000
+  ride4ever-service-portainer:
+    image: portainer/portainer-ce
+    restart: always
+    networks:
+      - network_discovery
+    ports:
+      - 9443:9443
+      - 9000:9000
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+  ride4ever-microservice-message-broker:
+    build: ./ride4ever-message-broker
+    restart: always
+    hostname: message-broker
+    networks:
+      - network_message_broker
+    ports:
+      - 61616:61616
+networks:
+  network_discovery: {}
+  network_configuration: {}
+  network_message_broker: {}

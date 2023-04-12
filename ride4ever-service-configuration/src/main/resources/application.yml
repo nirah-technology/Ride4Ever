@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: r4r-service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Zaroastre/ride4ever-microsrevices-configurations.git
+
+server:
+  port: 9101
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus

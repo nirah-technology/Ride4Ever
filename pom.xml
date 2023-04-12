@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.nirahtech</groupId>
+    <artifactId>ride4ever-backend</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>ride4ever-backend</name>
+    <url>https://github.com/Zaroastre/ride4ever-backend</url>
+    <scm>
+        <connection>scm:git@github.com:Zaroastre/ride4ever-backend.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>Artifactory</id>
+            <name>Artifactory-releases</name>
+            <url>https://eu-west-3.console.aws.amazon.com/codesuite/codecommit/repositories/engie-ineo-maven-repository/browse?region=eu-west-3</url>
+        </repository>
+        <snapshotRepository>
+            <id>Artifactory</id>
+            <name>Artifactory-snapshots</name>
+            <url>https://eu-west-3.console.aws.amazon.com/codesuite/codecommit/repositories/engie-ineo-maven-repository/browse?region=eu-west-3</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <developers>
+        <developer>
+            <id>nicolas.metivier</id>
+            <name>Nicolas METIVIER</name>
+            <email>nicolas.metivier@engie.com</email>
+            <url>https://github.com/Zaroastre</url>
+            <organization>ENGIE INEO ES</organization>
+            <organizationUrl>https://fr.wikipedia.org/wiki/Engie_Ineo</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Paris</timezone>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/31073596?v=4</picUrl>
+            </properties>
+        </developer>
+    </developers>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>14</java.version>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
+    </properties>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ride4ever-core</module>
+        <module>ride4ever-microservice-account</module>
+        <module>ride4ever-microservice-biker</module>
+        <module>ride4ever-microservice-broker</module>
+        <module>ride4ever-microservice-garage</module>
+        <module>ride4ever-microservice-geomap</module>
+        <module>ride4ever-microservice-motorcycleclub</module>
+        <module>ride4ever-microservice-recovery</module>
+        <module>ride4ever-microservice-reservation</module>
+        <module>ride4ever-microservice-trip</module>
+        <module>ride4ever-service-apigateway</module>
+        <module>ride4ever-service-configuration</module>
+        <module>ride4ever-service-discovery</module>
+    </modules>
+</project>

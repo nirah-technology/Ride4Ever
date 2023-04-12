@@ -1,2 +1,8 @@
-.vscode
-**/**/target
+target/
+**/target/
+
+.settings/
+**/.settings/
+
+.project
+**/.project

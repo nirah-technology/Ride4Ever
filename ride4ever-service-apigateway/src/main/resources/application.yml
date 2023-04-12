@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: ride4ever-service-apigateway
+  # config:
+  #   import: configserver:http://ride4ever-service-configuration:9101
+server:
+  port: 9600
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://ride4ever-service-discovery:8761/eureka}
+  host:
+    socket-timeout-millis: 30000
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus
+          - hystrix.stream
+zuul:
+  routes:
+    RIDE4EVER-MICROSERVICE-ACCOUNT:
+      path: /RIDE4EVER-MICROSERVICE-ACCOUNT/**
+      serviceId: RIDE4EVER-MICROSERVICE-ACCOUNT
+    RIDE4EVER-MICROSERVICE-BIKER:
+      path: /RIDE4EVER-MICROSERVICE-BIKER/**
+      serviceId: RIDE4EVER-MICROSERVICE-BIKER
+    RIDE4EVER-MICROSERVICE-BROKER:
+      path: /RIDE4EVER-MICROSERVICE-BROKER/**
+      serviceId: RIDE4EVER-MICROSERVICE-BROKER
+    RIDE4EVER-MICROSERVICE-GARAGE:
+      path: /RIDE4EVER-MICROSERVICE-GARAGE/**
+      serviceId: RIDE4EVER-MICROSERVICE-GARAGE
+    RIDE4EVER-MICROSERVICE-MOTORCYCLECLUB:
+      path: /RIDE4EVER-MICROSERVICE-MOTORCYCLECLUB/**
+      serviceId: RIDE4EVER-MICROSERVICE-MOTORCYCLECLUB
+    RIDE4EVER-MICROSERVICE-RESERVATION:
+      path: /RIDE4EVER-MICROSERVICE-RESERVATION/**
+      serviceId: RIDE4EVER-MICROSERVICE-RESERVATION
+    RIDE4EVER-MICROSERVICE-TRIP:
+      path: /RIDE4EVER-MICROSERVICE-TRIP/**
+      serviceId: RIDE4EVER-MICROSERVICE-TRIP

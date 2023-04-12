@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: r4r-discovery-service
+  profiles:
+    active: production
+  # cloud:
+  #   config:
+  #     uri: http://configservice:8888
+server:
+  port: 8761
+eureka:
+  datacenter: local
+  environment: production
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    environment:
+      active-profiles:
+      - production
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus

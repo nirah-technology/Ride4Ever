@@ -103,3 +103,5 @@ Human needs:
 - 20_000€ laptops
 
 https://www.planitpoker.com/board/#/room/93b90d34e5174be9b49f48125850e252
+
+https://github.com/Zaroastre/ride4ever-ws/tree/main/src/main/java/io/nirahtech/ride4ever/microservices/location
